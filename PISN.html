@@ -1,0 +1,157 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+
+:root{--g:#8a5f1a;--g2:rgba(138,95,26,0.22);--g3:rgba(138,95,26,0.06)}
+@media(prefers-color-scheme:dark){:root{--g:#c9a84c;--g2:rgba(201,168,76,0.28);--g3:rgba(201,168,76,0.07)}}
+
+.wrap{position:relative;padding:68px 56px 92px;max-width:800px;margin:0 auto;overflow:hidden}
+.patsv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.cont{position:relative;z-index:1}
+
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.a0{opacity:0;animation:rise 1s ease .1s forwards}
+.a1{opacity:0;animation:rise 1s ease .5s forwards}
+.a2{opacity:0;animation:rise 1s ease .9s forwards}
+.a3{opacity:0;animation:rise 1s ease 1.3s forwards}
+.a4{opacity:0;animation:rise 1s ease 1.7s forwards}
+.a5{opacity:0;animation:rise 1s ease 2.1s forwards}
+
+.hdr{text-align:center;padding-bottom:52px;border-bottom:1px solid var(--g2);margin-bottom:60px}
+.eye{font-size:9px;letter-spacing:6px;text-transform:uppercase;color:var(--g);margin-bottom:28px}
+.ttl{font-family:'Amiri',serif;font-size:38px;font-weight:700;color:var(--g);line-height:1.2;margin-bottom:10px}
+.ar{font-family:'Amiri',serif;font-size:22px;color:var(--g2);direction:rtl;margin-bottom:20px;letter-spacing:2px}
+.tgl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14.5px;color:var(--color-text-secondary);line-height:1.75;max-width:520px;margin:0 auto}
+
+.srule{display:flex;align-items:center;gap:16px;margin-bottom:40px}
+.srule::before,.srule::after{content:'';flex:1;height:1px;background:var(--g2)}
+.srule span{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--g);white-space:nowrap}
+
+.sec{margin-bottom:64px}
+.gline{width:140px;height:1px;background:var(--g2);margin:0 auto}
+.msimple{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;line-height:1.55;color:var(--color-text-primary);text-align:center;padding:36px 0;max-width:620px;margin:0 auto}
+.msimple .k{color:var(--g)}
+.ann{text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--color-text-secondary);margin-top:24px;font-family:'Amiri',serif}
+
+.qwrap{border-left:2px solid var(--g2);padding:20px 28px 24px 32px;margin-left:12px;background:var(--g3)}
+.qmark{font-family:'Amiri',serif;font-size:64px;color:var(--g2);line-height:.6;margin-bottom:14px}
+.mcomp{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;line-height:2;color:var(--color-text-primary)}
+.mcomp .k{font-style:normal;font-weight:500;color:var(--g)}
+.mcomp .aw{font-family:'Amiri',serif;font-style:normal;font-size:15px;color:var(--g);opacity:.75}
+
+.refs{border-top:1px solid var(--g2);padding-top:52px;margin-top:12px}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px;margin-bottom:36px}
+.ri{border-top:1px solid var(--color-border-tertiary);padding-top:14px}
+.rm{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:8px}
+.rn{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px;line-height:1.3}
+.rd{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--color-text-secondary);font-style:italic;line-height:1.6}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px;justify-content:center}
+.tag{padding:5px 14px;border:1px solid var(--color-border-tertiary);font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--color-text-secondary)}
+.tag.h{border-color:var(--g2);color:var(--g);background:var(--g3)}
+
+.foot{text-align:center;margin-top:60px;padding-top:36px;border-top:1px solid var(--g2)}
+.forn{font-family:'Amiri',serif;font-size:20px;color:var(--g2);letter-spacing:12px}
+.fnote{font-family:'Cormorant Garamond',serif;font-size:11.5px;color:var(--color-text-secondary);font-style:italic;margin-top:10px}
+
+@media(max-width:600px){.wrap{padding:44px 20px 72px}.ttl{font-size:26px}.msimple{font-size:22px}.mcomp{font-size:16px}.rgrid{grid-template-columns:1fr}}
+</style>
+
+<h2 class="sr-only">Two mottos for Pan-Islamic Socialist Nationalism, with intellectual genealogy and scholarly references</h2>
+
+<div class="wrap">
+  <svg class="patsv" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="istar" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <polygon points="50,6 57,32 81,19 68,43 94,50 68,57 81,81 57,68 50,94 43,68 19,81 32,57 6,50 32,43 19,19 43,32" fill="none" stroke="var(--g)" stroke-width="0.5" opacity="0.35"/>
+        <line x1="50" y1="6" x2="50" y2="94" stroke="var(--g)" stroke-width="0.2" opacity="0.2"/>
+        <line x1="6" y1="50" x2="94" y2="50" stroke="var(--g)" stroke-width="0.2" opacity="0.2"/>
+        <line x1="19" y1="19" x2="81" y2="81" stroke="var(--g)" stroke-width="0.2" opacity="0.2"/>
+        <line x1="81" y1="19" x2="19" y2="81" stroke="var(--g)" stroke-width="0.2" opacity="0.2"/>
+        <circle cx="50" cy="50" r="1.5" fill="var(--g)" opacity="0.25"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#istar)"/>
+  </svg>
+
+  <div class="cont">
+    <header class="hdr a0">
+      <p class="eye">Ideological Synthesis · Political Theology · Revolutionary Manifesto</p>
+      <h3 class="ttl">Pan-Islamic Socialist Nationalism</h3>
+      <p class="ar">القومية الاشتراكية الإسلامية</p>
+      <p class="tgl">A synthesis of al-Afghani's civilizational solidarity, Iqbal's metaphysics of collective selfhood, and the Islamic socialist tradition — forged in the crucible of colonial modernity.</p>
+    </header>
+
+    <section class="sec a1">
+      <div class="srule"><span>I · The Simple Motto</span></div>
+      <div class="gline"></div>
+      <p class="msimple">"The <span class="k">Ummah</span> is the Nation;<br>the Earth is its <span class="k">Commons</span>;<br>Justice is its <span class="k">Sovereign</span>."</p>
+      <div class="gline"></div>
+      <p class="ann">After al-Afghani · Iqbal · al-Siba'i · Q. 21:105 · Q. 2:143</p>
+    </section>
+
+    <section class="sec a2">
+      <div class="srule"><span>II · The Complex Motto</span></div>
+      <div class="qwrap">
+        <div class="qmark">"</div>
+        <p class="mcomp">Where <span class="k">al-Afghani's</span> <em>al-'Urwah al-Wuthqa</em> <span class="aw">(العروة الوثقى)</span> — the indissoluble bond — is reforged not merely as creed but as the <span class="k">'Asabiyyah</span> of the colonized and the dispossessed; where <span class="k">Iqbal's</span> <em>Khudi</em> <span class="aw">(خودی)</span>, the inviolable self that will not bend before throne or capital, is scaled from the individual soul to the collective will of a people; and where <span class="k">Zakat</span> ceases to be episodic almsgiving and becomes the permanent, non-negotiable architecture of the common good — only there does the <em>Ummah</em> become what history has always demanded but never yet delivered: a sovereignty answering to no empire, no market, and no earthly throne, but to the divine covenant between God and the faithful poor.</p>
+        <p class="ann" style="text-align:left;margin-top:20px;">After Ibn Khaldun · al-Afghani · Iqbal · Shariati · Q. 2:275–279 · Q. 21:105 · Q. 49:13</p>
+      </div>
+    </section>
+
+    <section class="refs a3">
+      <div class="srule"><span>Intellectual Genealogy</span></div>
+      <div class="rgrid">
+        <div class="ri">
+          <p class="rm">I · Pan-Islamism</p>
+          <p class="rn">Jamāl al-Dīn al-Afghānī (1838–1897)</p>
+          <p class="rd">"al-'Urwah al-Wuthqa" (1884). The Ummah recast as civilizational bloc against Western hegemony and the colonial logic of divide-and-rule.</p>
+        </div>
+        <div class="ri">
+          <p class="rm">II · Philosophy of Selfhood</p>
+          <p class="rn">Muḥammad Iqbāl (1877–1938)</p>
+          <p class="rd">"Asrār-e-Khudī" (1915); "Reconstruction of Religious Thought" (1930). The Ummah as spiritual nation; Khudi as inviolable collective dignity.</p>
+        </div>
+        <div class="ri">
+          <p class="rm">III · Historical Sociology</p>
+          <p class="rn">Ibn Khaldūn (1332–1406)</p>
+          <p class="rd">"Muqaddimah" (1377). 'Asabiyyah (group solidarity) as the engine of civilizations — reinterpreted here as solidarity built on shared dispossession, not blood.</p>
+        </div>
+        <div class="ri">
+          <p class="rm">IV · Islamic Socialism</p>
+          <p class="rn">Muṣṭafā al-Sibā'ī (1915–1964)</p>
+          <p class="rd">"Ishtirākiyyat al-Islām" (1959). Islam inherently socialist through Zakat, prohibition of Ribā, and the theology of Istikhlāf (divine stewardship of the earth).</p>
+        </div>
+        <div class="ri">
+          <p class="rm">V · Revolutionary Theology</p>
+          <p class="rn">ʿAlī Sharīʿatī (1933–1977)</p>
+          <p class="rd">Fanonian Third Worldism fused with Shi'a theology. Islam as ideology of the Mustaz'afin (Q. 4:75). The language of Islamic liberation theology.</p>
+        </div>
+        <div class="ri">
+          <p class="rm">VI · Revelatory Sources</p>
+          <p class="rn">The Quran · Foundational Texts</p>
+          <p class="rd">Q. 2:143 (Ummatan Wasaṭan); Q. 2:275–279 (ban on Ribā/usury); Q. 21:105 (the righteous inherit the earth); Q. 49:13 (unity across human difference).</p>
+        </div>
+      </div>
+      <div class="tags a4">
+        <span class="tag h">'Asabiyyah</span>
+        <span class="tag h">Khudī</span>
+        <span class="tag h">al-'Urwah al-Wuthqā</span>
+        <span class="tag h">Zakāt</span>
+        <span class="tag">Anti-Imperialism</span>
+        <span class="tag">Third Worldism</span>
+        <span class="tag">Istikhlāf</span>
+        <span class="tag">Ribā Prohibition</span>
+        <span class="tag">Bandung 1955</span>
+        <span class="tag">Mustaz'afin</span>
+      </div>
+    </section>
+
+    <footer class="foot a5">
+      <div class="forn">❧ ✦ ❧</div>
+      <p class="fnote">In the tradition of al-Afghani's al-'Urwah al-Wuthqa · Iqbal's Reconstruction · Ibn Khaldun's Muqaddimah</p>
+    </footer>
+  </div>
+</div>
